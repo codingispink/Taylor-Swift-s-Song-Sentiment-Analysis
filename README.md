@@ -178,6 +178,9 @@ The result shows that inlove sentiment is 356.7 and breakup sentiment is -40.91,
 
 ## ACKNOWLEDGEMENT
 [1] Jan LLenzzl Dagohoy: https://www.kaggle.com/datasets/thespacefreak/taylor-swift-song-lyrics-all-albums
+
 [2] Codeacademy: https://www.youtube.com/watch?v=rcmOa9c874s&t=1534s&ab_channel=Codecademy
+
 [3] American Songwriter: https://americansongwriter.com/5-stellar-breakup-albums/#:~:text=Red%20%E2%80%93%20Taylor%20Swift,department%20has%20long%20been%20cemented. 
+
 [4] Merriam-Webster: https://www.merriam-webster.com/thesaurus/love
