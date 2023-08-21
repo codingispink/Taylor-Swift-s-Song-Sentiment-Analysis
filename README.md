@@ -56,6 +56,7 @@ lyrics['clean_lyric'] = lyrics['lyric'].str.lower()
 
 **3. Remove all the "s" and stop words**
 
+
 '''
 lyrics['clean_lyric']= lyrics['clean_lyric'].str.replace('[^\w\s]','')
 stop = ['the', 'a', 'this', 'that', 'to', 'is', 'am', 'was', 'were', 'be', 'are', 'is']
@@ -73,7 +74,7 @@ lyrics['midnight']=lyrics['clean_lyric'].str.contains('midnight')
 print(sum(lyrics['midnight']))
 ```
 
-This case describes a scenario when you want to analyze a specific word. What if you want to analyze a list of words that are very similar in sentiments? For example, love? In this case, I will create a list of all the words that describes the feeling of being in love (thank you merriam-webster dictionary). I am also interested in knowing how often her songs are about her contemplations of growth and experiences. Or just as a sad song queen myself, how often her songs depict feelings of a past relationship.
+The case above describes a scenario when you want to analyze a specific word. What if you want to analyze a list of words that are very similar in sentiments? For example, love? In this case, I will create a list of all the words that describes the feeling of being in love (thank you merriam-webster dictionary). I am also interested in knowing how often her songs are about her contemplations of growth and experiences. Or just as a sad song queen myself, how often her songs depict feelings of a past relationship.
 
 ```
 breakup =['tears', 'break', 'shatter', 'heartbreak', 'pain', 'hurt', 'sad', 'dark', 'tears', 'cut', 'miss', 'cry', 'cheat', 'betray']
