@@ -57,14 +57,13 @@ lyrics['clean_lyric'] = lyrics['lyric'].str.lower()
 **3. Remove all the "s" and stop words**
 
 
-'''
+```
 lyrics['clean_lyric']= lyrics['clean_lyric'].str.replace('[^\w\s]','')
 stop = ['the', 'a', 'this', 'that', 'to', 'is', 'am', 'was', 'were', 'be', 'are', 'is']
 lyrics['clean_lyric'] = lyrics['clean_lyric'].apply(lambda x: ' '.join([word for word in x.split() if word not in (stop)]))
 from sklearn.feature_extraction import text
 skl_stop = text.ENGLISH_STOP_WORDS
-'''
-
+```
 ### Find Keyword Mentions
 
 In this project, let's look at 3 words: 'midnight', 'time', 'place'. Feel free to change it to words you want to. What you can do here is that you will access all the words in the clean_lyric column and only get those that are 'midnights'. Do similarly with 'time' and 'place'. You can also use the 'sum' function to count the amount of time a specific word is mentioned.
