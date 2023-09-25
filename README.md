@@ -152,7 +152,7 @@ lyrics.drop('polarity', axis=1)
 ```
 
 
-**Let's Visualize the Sentiment Analysis of Taylor Swift's songs over the year **
+**Let's Visualize the Sentiment Analysis of Taylor Swift's songs over the year**
 ```
 yearly_sentiment = lyrics.groupby('album_year').sum().reset_index()
 plt.plot(yearly_sentiment['album_year'], yearly_sentiment['compound'])
